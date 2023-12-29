@@ -1,0 +1,22 @@
+/* MyCustomComponent.css */
+.my-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #a90f0f; /* Adjust the border color as needed */
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .my-icon {
+    color: #000; /* Adjust the icon color as needed */
+    margin-bottom: 8px; /* Adjust space between icon and title */
+  }
+  
+  .my-title, .my-label {
+    text-align: left;
+  }
+  
+  /* Additional styles if needed */
+  

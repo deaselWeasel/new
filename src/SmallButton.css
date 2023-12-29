@@ -1,0 +1,33 @@
+.small-button {
+    display: inline-flex;
+    padding: var(--button-top-bottom, 4px) var(--button-left-right, 8px);
+    align-items: center;
+    gap: var(--button-within, 4px);
+    /* San Serif/Body Small/Regular */
+    font-family: Objektiv VF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+}
+
+.small-button.primary {
+    color: var(--navigation-buttons-primary-text, #FFF);
+    border-radius: var(--button-radius, 4px);
+    border: 1px solid var(--navigation-buttons-primary-outline, rgba(255, 255, 255, 0.00));
+    background: var(--navigation-buttons-primary-bg, #5E4DB2);
+}
+
+.small-button.secondary {
+    color: var(--navigation-buttons-secondary-text, #292929);
+    border-radius: var(--button-radius, 4px);
+    border: 1px solid var(--navigation-buttons-secondary-outline, rgba(28, 28, 28, 0.14));
+    background: var(--navigation-buttons-secondary-bg, rgba(255, 255, 255, 0.00));
+}
+
+.small-button.tertiary{
+    color: var(--navigation-buttons-tertiary-text, #5E4DB2);
+    border-radius: var(--button-radius, 4px);
+    border: 2px solid var(--navigation-buttons-tertiary-outline, #FFF);
+    background: var(--navigation-buttons-tertiary-bg, rgba(255, 255, 255, 0.90));
+}

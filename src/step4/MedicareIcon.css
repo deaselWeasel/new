@@ -1,0 +1,14 @@
+.select-with-icon .ant-select-selector {
+    padding-left: 80px; /* Adjust as needed */
+  }
+  
+  .select-with-icon .ant-select-selection-item, .select-with-icon .ant-select-selection-placeholder {
+    padding-left: 8px; /* Adjust as needed */
+  }
+  
+  .select-with-icon .ant-select-suffix {
+    position: absolute;
+    left: 8px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+  }

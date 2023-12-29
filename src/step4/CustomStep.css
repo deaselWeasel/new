@@ -1,0 +1,48 @@
+/* CustomStep.css */
+
+/* Style for the step number inside the circle */
+.ant-steps-item-icon {
+    background-color: #5E4DB2 !important; /* Your desired shade of purple */
+    border-color: #5E4DB2 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the current step circle */
+  .ant-steps-item-process .ant-steps-item-icon {
+    background-color: #5E4DB2 !important; /* Your desired shade of purple for the current step */
+    border-color: #5E4DB2 !important;
+  }
+  
+  /* Style for the connector line */
+  .ant-steps-item-tail::after {
+    background-color: rgba(53, 44, 99, 1) !important; /* Your desired shade of purple for the connector line */
+  }
+  
+  /* Styles for the container of the steps */
+  .custom-step-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Override the default dot style to show the number instead */
+  .ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot {
+    display: none; /* Hide the default dot */
+  }
+  
+  .current-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px; /* Set the width of the circle */
+    height: 18px; /* Set the height of the circle */
+    border-radius: 50%; /* Make it round */
+    background: rgba(94, 77, 178, 1); /* Purple background */
+    color: #fff; /* White text */
+    font-size: 11px; /* Size of the number */
+    font-weight: 500;
+  }

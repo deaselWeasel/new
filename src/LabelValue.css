@@ -1,0 +1,42 @@
+.label-value-card {
+    display: flex;
+    width: 256px;
+    min-width: var(--fixed-sizing-min-width-field-256-px, 256px);
+    min-height: var(--input-min-height, 48px);
+    padding: var(--input-top-bottom, 12px) var(--input-left-right, 12px);
+    align-items: center;
+    gap: var(--input-within, 8px);
+    border-radius: var(--radius-btn-radius, 4px);
+    background: var(--PrimaryBG, #FFF);
+    
+}
+  
+.label {
+    font-weight: 500;
+    color: #292929;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--input-within, 8px);
+}
+  
+.value {
+    display: flex;
+    align-items: center;
+    gap: var(--input-within, 8px);
+    flex: 2;
+    border: 1px solid var(--PrimaryBorder, rgba(28, 28, 28, 0.14));
+    border-radius: var(--radius-btn-radius, 4px);
+    padding: var(--input-top-bottom, 12px);
+    margin-right: var(--input-left-right, 80px);
+    width: 70%;
+    color: var(--PrimaryValue, #292929);
+    font-family: 'Objektiv VF', sans-serif; /* Include a fallback font */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+

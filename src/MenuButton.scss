@@ -1,0 +1,18 @@
+.B-colour{
+    color: #6E5DC6;
+}
+.circular-button {
+    border-radius: 50%; // This makes the button circular
+    width: 40px;       // Adjust width as needed
+    height: 40px;      // Adjust height as needed
+    padding: 0;        // Removes padding to maintain circular shape
+  
+    // Optionally, center the icon inside the button
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // You can keep your existing B-colour class or integrate it here
+ 
+  

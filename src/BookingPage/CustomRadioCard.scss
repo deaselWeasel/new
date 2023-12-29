@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/gpx0lrb.css");
+// RadioStyles.scss
+.custom-radio-wrapper {
+    display: flex;
+    align-items: center; // Keep items vertically aligned in the center
+    margin-bottom: 20px; // Space between radio options
+  
+    .ant-radio-wrapper {
+      margin-right: 8px; // Space between the radio button and the text
+    }
+  
+    .ant-radio-inner {
+      width: 24px; // Increase the width of the outer circle
+      height: 24px; // Increase the height of the outer circle
+      border-color: black; // Custom border color for the radio when unchecked
+      border-width: 2px; // Specify the border width if you want it thicker
+      &::after {
+        content: ''; // Ensure this is here to generate the pseudo-element
+        position: absolute;
+        top: -32.5%;
+        left: -36%;
+        transform: translate(-50%, -50%);
+        width: 20px; // Make the inner circle smaller relative to the outer circle
+        height: 20px; // Adjust the height to match the width
+        margin-top: -5.5px; // Adjust the top position based on new sizes
+        margin-left: -5.5px; // Adjust the left position based on new sizes
+        border-radius: 60%;
+        background-color: #5E4DB2; // Inner circle color when radio is checked
+      }
+    }
+  
+    .ant-radio-checked .ant-radio-inner {
+      border-color: #7C5AC2; // Border color for the radio when checked
+      // Optional: If you want the whole radio to be white when checked, uncomment below
+      // background-color: white; // Set the background of the outer circle when checked
+      background-color: white;
+      &::after {
+        width: 46px;
+        height: 44px;
+        background-color: #5E4DB2; // Set the inner circle color when checked
+      }
+    }
+  
+    // Text container
+    .radio-text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // Center text content vertically
+    }
+  
+    .radio-title {
+      font-size: 16px; // Custom font size for the title
+      font-weight: 500; // Custom font weight for the title
+      color: #333; // Custom color for the title
+      margin: 0; // Remove default margins
+      padding: 0; // Remove default padding
+    }
+  
+    .radio-label {
+      font-size: 14px; // Custom font size for the label
+      color: #888; // Custom color for the label
+      margin: 0; // Remove default margins
+      padding: 0; // Remove default padding
+    }
+}
+h3{
+    color: var(--Primary, #292929);/* San Serif/Body/Medium */
+    font-family: objektiv-mk2;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight:500 ;
+    line-height: 1.25rem; /* 142.857% */
+    margin-left: -25px;
+}

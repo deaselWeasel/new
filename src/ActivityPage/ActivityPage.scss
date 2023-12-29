@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+.activity-container{
+    background-size: cover;
+    background-position: center;
+    height: 100vh; // This will cover the full height of the viewport
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Align content to the top
+    align-items: center;
+    position: relative; // Needed for absolute positioning of children
+
+    
+}
+.activity-page-header {
+    display: flex; // Use flexbox
+    justify-content: space-between; // Space between elements
+    align-items: center; // Align items vertically
+    width: 80%; // Full width to spread content
+    
+    h1 {
+        color: #000;
+        font-family: Gabriela, serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing:  0.004rem;
+    }
+}
+
+.selector-styles {
+    width: 150px; // Set the width to 100px
+    overflow: hidden;
+    border-radius: var(--radius-btn-radius, 0.25rem);
+    background: var(--PrimaryBG, rgba(255, 255, 255, 0.00));
+    
+
+
+    // ... other existing styles
+}
+
+
+.boxes-above-overlay {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 16%; // Adjust as needed
+
+}
+
+.left-box, .right-box {// Adjust width as needed
+    height: 5.3125rem;
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.50);
+    // Additional styling
+}
+.left-box{
+    position: relative;
+    width:6.3125rem;
+    margin-left: 9%;
+    
+    h6{
+        position: absolute; // Positions the h6 element absolutely within the div
+        top: 0; // Aligns to the top of the div
+        left: 0; // Aligns to the left of the div
+        margin: 10px;
+        color: var(--text-text-on-primary, #FFF);
+        font-family: Objektiv VF;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1rem; /* 145.455% */
+        opacity: 0.5;
+    }
+    h1{
+        position: absolute;
+        color:var(--text-text-on-primary, #FFF);
+        left:12px;
+        font-family: VIC;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.25rem; /* 162.5% */
+        letter-spacing: 0.004rem;
+    }
+
+}
+
+.right-box{
+    position: relative;
+    width:13.0625rem;
+    margin-right:9%;
+    display: flex;
+    justify-content: flex-end; // Aligns content to the right
+    align-items: center; // Centers content verticall
+    
+    border-radius: 0.25rem;
+
+    img {
+        max-width: 75%; // Ensures the image does not overflow its container
+        height: auto; // Maintains aspect ratio
+        padding-right: 10px;
+    }
+    h6{
+        position: absolute; // Positions the h6 element absolutely within the div
+        top: 0; // Aligns to the top of the div
+        left: 0; // Aligns to the left of the div
+        margin: 10px;
+        color: var(--text-text-on-primary, #FFF);
+        font-family: Objektiv VF;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1rem; /* 145.455% */
+        opacity: 0.5;
+    }
+}
+
+
+
+.overlay-activity{
+    position: fixed;
+    bottom: 0;
+    top: calc(60px + 5.3125rem * 2);
+    width: 100%; /* Responsive width based on viewport width */
+    max-width: 450px; /* Ensures element doesn't exceed the parent's width */
+    min-width: 250px; /* Minimum width to maintain usability */
+    height: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 2rem 0 0;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.10);
+    z-index: 1;
+    overflow-y: auto; 
+
+    .ant-list{
+        width: 100%;
+    }
+
+    .date-header {
+        font-weight: bold;
+        margin-bottom: 5px;
+        background: var(--elements-disabled-bg, rgba(28, 28, 28, 0.03));
+        color: var(--text-disabled-text, rgba(28, 28, 28, 0.31));
+        /* San Serif/Body/Bold */
+        font-family: sans-serif;
+        font-size: smaller;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem; /* 142.857% */
+      }
+    
+      .ant-list-item {
+        padding: 5px;
+        align-items: center;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex; /* This ensures items align horizontally */
+        justify-content: space-between; /* This separates items to either end */
+    }
+    
+      .ant-avatar {
+        margin-right: 10px;
+      }
+      .custom-avatar {
+        color: #000;  
+        font-family: Objektiv VF;
+        font-size: 0.6875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1rem; /* 145.455% */
+      }
+    
+      .ant-list-item-meta-title {
+        margin-bottom: 0;
+      }
+    
+      .transaction-amount {
+        font-weight: bold;
+        margin-left: auto; // Pushes the amount to the right
+      }
+      .month-year-header {
+        color: var(--text-disabled-text, rgba(28, 28, 28, 0.31)); /* Adjust the color as needed */
+        font-size: 1rem; /* Adjust the size as needed */
+        font-weight: bold; /* Make the month and year bold */
+        text-align: left; /* Align the text to the left */
+        padding-left: 20px; /* Add padding to align with the content below */
+        padding-top: 20px; /* Add padding at the top */
+        margin-bottom: 10px; /* Space before the list starts */
+        font-family: 'Objektiv VF', sans-serif; /* The specified font family */
+        width: 100%; /* Ensure the header spans the full width */
+      }
+      
+      .date-header {
+        /* Existing styles... */
+        padding-left: 20px; /* Align with the month-year header */
+      }
+      /* Additional styles to enhance the appearance of the scroll bar */
+
+}
+
+.offers-footer {
+    /* if not already positioned */
+    z-index: 2; /* higher than the overlay's z-index */
+}
+
+.down-icon {
+    margin-top: 10px; /* Adjust this value as needed */
+    /* OR for more specific positioning */
+    position: relative;
+    top: 10px; /* Adjust this value to move the icon up/down */
+    font-size: 24px;
+    color: #343434;
+    opacity: 0.2;
+}
+
+.overlay-list {
+    height: 130px; /* Set a fixed height for the list container */
+    overflow-y: scroll; /* Enable vertical scrolling */
+     /* Optional padding for aesthetics */
+}
+
+/* Styling for the scrollbar (optional) */
+.overlay-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overlay-list::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Scroll thumb color */
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .top-box {
+        width: 40%; /* Adjust as needed for smaller screens */
+    }
+    .small-box {
+        width: 20%; /* Adjust as needed for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    

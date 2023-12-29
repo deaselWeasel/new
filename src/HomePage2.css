@@ -1,0 +1,142 @@
+.contact-page-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center children horizontally */
+}
+
+.top-of-page-container {
+    background: rgba(255, 255, 255, 0.90);
+    width: 450px;
+    height: 450px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px; /* Add padding at the top for spacing */
+    flex-direction: column;
+    overflow: hidden; /* This will hide any part of the card that goes beyond the container's bounds */
+    justify-content: flex-start;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust the width as needed */
+    max-width: 450px; /* Adjust the max-width as needed */
+    margin: auto; /* Centers the container on the page */
+    padding: 30px;
+  }
+
+  .text-container {
+    text-align: flex-start; /* Aligns text to the left */
+    width: 85%;
+    margin-bottom: 90px;
+}
+
+  .balance-title {
+    margin: 0;
+    color: #000;
+    text-align: flex-start;
+    font-family: Gabriela;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.064px;
+  }
+
+  .balance-amount {
+    margin: 0;
+    color: #000;
+    text-align: flex-start;
+    font-family: VIC;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px; /* 144.444% */
+    letter-spacing: 0.072px;
+  }
+  
+  .balance-description {
+    color: #000;
+    text-align: flex-start;
+    font-family: Gabriela;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.032px;
+    margin: 0;
+    opacity: 0.3;
+  }
+
+.card-wrapper {
+    margin-top: 50px; /* Adjust this margin to control the placement of the CreditCard */
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically and horizontally */
+    height: 100%; /* Occupy the full height between top and bottom containers */
+    margin-top: 300px;
+  }
+  
+  .action-button {
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    width: 13.5rem;
+    height: 3.5rem;
+    padding: 1rem 1.5rem;
+    gap: var(--button-within, 0.5rem);
+    border-radius: 12px;
+    border: 1px solid var(--navigation-buttons-primary-outline, rgba(255, 255, 255, 0.00));
+    background: rgba(255, 255, 255, 0.99);
+    background-blend-mode: hard-light;
+    color: var(--PrimaryText, #292929);
+    /* San Serif/Body/Regular */
+    font-family: Objektiv VF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  
+
+
+.bottom-page-container {
+    background: rgba(255, 255, 255, 0.90);
+    width: 450px;
+    height: 200px;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.unlock-text {
+        color: var(--Primary, #292929);
+        font-family: 'Objektiv VF', sans-serif; /* Ensure the font-family is correctly defined */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Ensure no padding is affecting layout */
+    }
+      

@@ -1,0 +1,139 @@
+.contact-page-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center children horizontally */
+}
+
+.top-page-container {
+    background: rgba(255, 255, 255, 0.90);
+    width: 450px;
+    height: 320px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px; /* Add padding at the top for spacing */
+    flex-direction: column;
+    overflow: hidden; /* This will hide any part of the card that goes beyond the container's bounds */
+
+
+    justify-content: flex-start;
+}
+
+.card-message {
+    text-align: center;
+    margin-top: 80px;
+    color: var(--Primary, #292929);
+    /* San Serif/Body/Regular */
+    font-family: Objektiv VF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.card-wrapper {
+    margin-top: 70px;
+}
+
+.profile-box {
+    width: 270px; /* Match the width of the top and bottom containers */
+    height: 60px; /* Subtract the total height of top and bottom containers */
+    margin: 300px 0; /* The top margin should match the height of the top container */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Relative positioning */
+    z-index: 1; /* Ensure it sits above the other containers */
+    padding: var(--sidenav-top-bottom, 8px) var(--sidenav-left-right, 16px);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--ElementRadius, 4px);
+    border: 1px solid var(--Outline, rgba(255, 255, 255, 0.00));
+    background: var(--StepBG, #FFF);
+    margin-top: 400px;
+}
+
+.profile-content {
+    display: flex;  
+  }
+  
+  .profile-text {
+    text-align: left;
+  }
+  
+  .profile-text h2,
+    .profile-text p {
+    color: var(--PrimaryText, #292929);
+    font-family: 'Objektiv VF', sans-serif; /* Ensure the font-family is correctly defined */
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px; /* Adjusted for readability, make smaller if needed */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Ensures no padding is affecting the layout */
+    }
+
+    .profile-text h2 {
+        font-weight: 700;
+    }
+    .profile-text p {
+        font-weight: 400;
+    }
+  
+  .profile-loader {
+    /* Style as needed, this example uses flex to center the icon */
+    display: flex;
+    align-items: center;
+  }
+  
+  .loader-icon {
+    /* Replace with the actual icon or loading animation */
+    width: 24px; /* Example size */
+    height: 24px; /* Example size */
+    border-radius: 50%;
+    border: 3px solid #ccc; /* Example loader style */
+    border-top-color: #5E4DB2; /* Purple color for the loader */
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  .bottom-page-container {
+    background: rgba(255, 255, 255, 0.90);
+    width: 450px;
+    height: 250px;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+    .unlock-text {
+        color: var(--Primary, #292929);
+        font-family: 'Objektiv VF', sans-serif; /* Ensure the font-family is correctly defined */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Ensure no padding is affecting layout */
+      }
+      

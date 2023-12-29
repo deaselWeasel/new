@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/gpx0lrb.css");
+
+/* Base container for the profile setup component */
+.profile-setup-step {
+    display: flex;
+    width: 270px;
+    padding: var(--sidenav-top-bottom, 8px) var(--sidenav-left-right, 16px);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--ElementRadius, 4px);
+    border: 1px solid var(--Outline, rgba(255, 255, 255, 0));
+    background: var(--StepBG, #FFF);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+    margin: 0 auto;
+  }
+  
+
+/* Header styling */
+.profile-setup-header h1 {
+    color: var(--PrimaryText, #292929);
+    /* San Serif/Variants/Caption Bold */
+    font-family: Objektiv-mk2;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 133.333% */
+    margin-bottom: 0.5em; /* Space below the header */
+}
+
+.profile-setup-header p {
+    color: var(--PrimaryText, #292929);
+    /* San Serif/Body Small/Regular */
+    font-family: objektiv-mk2;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+}
+
+/* Progress circle container */
+
+
+/* Ant Design progress circle overrides */
+.ant-progress-inner {
+    background-color: white; /* Remove any background color */
+}
+
+.ant-progress-circle-path {
+    stroke: #CDB4DB; /* The color of the progress */
+}
+
+.ant-progress-text {
+    fill: #5E4DB2; /* The color of the percentage text, if shown */
+}

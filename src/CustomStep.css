@@ -1,0 +1,47 @@
+/* CustomSteps.css */
+
+.custom-steps-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #5E4DB2; /* Default step background color */
+  border: 2px solid #FFF; /* White border for all steps */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative; /* For absolute positioning of the tails */
+  flex-shrink: 0;
+}
+
+.step.previous, .step.current {
+  border-color: #5E4DB2; /* Same color as the step background */
+}
+
+.step-tail {
+  flex-grow: 1;
+  height: 2px;
+  background-color: rgba(53, 44, 99, 1); /* Tail color */
+  margin: 0 8px; /* Space on sides of tail */
+  position: relative; /* Allows absolute positioning inside */
+}
+
+.step-tail::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; /* Tail takes full width of the .step-tail */
+  height: 2px;
+  background-color: rgba(53, 44, 99, 1); /* Tail color */
+}

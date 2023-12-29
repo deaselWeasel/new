@@ -1,0 +1,120 @@
+.offers-page-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    width: 100%; /* Ensure it covers the full width */
+    display: flex;
+    justify-content: center; /* Center the .central-alignment-container */
+    align-items: center; /* Vertically center */
+}
+
+.central-alignment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start (left) */
+    width: 65%; /* Adjust the width as needed */
+    max-width: 470px;
+    height: 100vh; /* Full height */
+    position: relative; /* For positioning children absolutely within */
+    justify-content: space-between;
+}
+
+.offers-header {
+    width: 100%; /* Take full width of parent */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+    position: absolute; /* Relative to .central-alignment-container */
+    text-align: left;
+    margin-bottom: 0;
+    top: 5%;
+}
+
+.offers-title {
+    margin-bottom: 10px; /* Space between title and description */
+    color: #000;
+    font-family: Gabriela;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.064px;
+}
+
+.offers-description {
+    color: #000;
+    font-family: Objektiv VF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.white-rectangle-box {
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    max-width: 450px;
+    height: 75vh;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    border-radius: 32px 32px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.offer-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 450px; /* Maximum width */
+    text-align: left; /* Align text to the left */
+    background: #FFFFFF; /* White background for the container */
+    border-radius: 16px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures nothing spills out of the container */
+    margin-bottom: 10px;
+}
+
+.offer-image {
+    width: 100%; /* Image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px 16px 0 0; /* Rounded corners for the top of the image */
+}
+
+.offer-title {
+    color: #000;
+    font-family: 'Objektiv VF', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 16px; /* Space from the image to the title */
+    margin-bottom: 8px; /* Space between title and description */
+    padding: 0 16px; /* Padding on the sides of the text */
+}
+
+.offer-description {
+    color: #000;
+    font-family: 'Objektiv VF', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 16px 16px; /* Padding on the sides and bottom of the text */
+    margin: 0; /* No additional margin */
+}
+
+/* Footer */
+.offers-wellText {
+    /* Custom styles for the wellText on the Offers page */
+    color: #5E4DB2; /* Change the color as needed */
+}
+
+@media (max-width: 600px) {
+    .white-rectangle-box {
+        width: 100%;
+    }
+
+    .central-alignment-container {
+        width: 100%;
+    }
+}
+

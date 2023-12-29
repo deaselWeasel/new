@@ -1,0 +1,32 @@
+.radio-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .radio-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .radio-option img {
+    margin-right: 10px;
+  }
+  
+  .radio-option .radio-title {
+    font-weight: bold;
+  }
+  
+  .radio-option .radio-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .radio-option.selected {
+    background-color: lightblue;
+  }
+  
+  /* Add additional styles for other states and styles if necessary */
+  
