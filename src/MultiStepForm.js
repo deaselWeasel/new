@@ -48,7 +48,7 @@ const MultiStepForm = () => {
         {field.type === 'text' ? (
           <input type="text" placeholder={field.placeholder} />
         ) : (
-          <DatePicker placeholder={field.placeholder} style={{ width: '108%' }} />
+          <DatePicker placeholder={field.placeholder} style={{ width: '104%' }} />
         )}
       </div>
     ));
