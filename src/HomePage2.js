@@ -30,13 +30,7 @@ const HomePage2 = () => {
       <div className="bottom-page-container">
         <p className="unlock-text">You're all caught up</p>
       </div>
-      <Footer
-                customStyle="offers-footer"
-                wellTextStyle="offers-wellText"
-                iconColor="#5E4DB2" /* Change the icon color as needed */
-                backgroundColor="yellow" /* Change the background color as needed */
-                buttonOpacity={1} /* Change the button opacity as needed */
-            />
+      <Footer iconColor="#5E4DB2"/>
     </div>
   );
 };

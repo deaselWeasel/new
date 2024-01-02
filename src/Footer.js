@@ -15,7 +15,7 @@ const Footer = ({ customStyle, wellTextStyle, iconColor, backgroundColor, button
   };
 
   return (
-    <div className={`footerStyle ${customStyle}`} style={{ '--icon-color': iconColor, '--bg-color': backgroundColor }}>
+    <div className={`footerStyle ${customStyle}`} style={{ '--bg-color': backgroundColor }}>
       <Popover
         content={<FooterMenu />}
         placement="topLeft"
@@ -24,21 +24,21 @@ const Footer = ({ customStyle, wellTextStyle, iconColor, backgroundColor, button
         onVisibleChange={handleVisibilityChange}
         overlayStyle={{
           width: '100vw',
-          left: '0px', // Adjust the value as needed to shift the menu to the right
+          left: '0px',
           textAlign: 'right'
         }}
       >
         <Button
-          icon={menuVisible ? <CloseOutlined style={{ color: 'var(--icon-color)' }} /> : <MenuIcon style={{ color: 'var(--icon-color)' }} />}
+          icon={menuVisible ? <CloseOutlined style={{ color: iconColor }} /> : <MenuIcon color={iconColor} />}
           type="default"
           onClick={() => setMenuVisible(!menuVisible)}
           className="float-button-right"
           style={{ opacity: buttonOpacity }}
         />
       </Popover>
-      <h1 className={`wellText ${wellTextStyle}`}>Well</h1>
+      <h1 className={`wellText ${wellTextStyle}`} style={{ color: iconColor }}>Well</h1>
       <Button
-        icon={<ProfileIcon style={{ color: 'var(--icon-color)' }} />}
+        icon={<ProfileIcon color={iconColor} />}
         type="default"
         style={{ position: 'absolute', left: 20, bottom: 15, opacity: buttonOpacity }}
         className="float-button-left"
@@ -48,3 +48,4 @@ const Footer = ({ customStyle, wellTextStyle, iconColor, backgroundColor, button
 };
 
 export default Footer;
+

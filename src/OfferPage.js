@@ -14,7 +14,7 @@ const OffersPage = () => {
                     <h1 className='offers-title'>Offers</h1>
                     <p className='offers-description'>Offers you join will be converted<br/>into points here</p>
                 </div>
-                <div className="white-rectangle-box">
+                <div className="white-rectangle-box-offer">
                     {/* ... Your offer containers ... */}
                     <div className="offer-container">
                     <img src={imageOne} alt="Offer One" className="offer-image" />
@@ -28,13 +28,7 @@ const OffersPage = () => {
                 </div>
                 </div>
             </div> 
-            <Footer
-                customStyle="offers-footer"
-                wellTextStyle="offers-wellText"
-                iconColor="#5E4DB2" /* Change the icon color as needed */
-                backgroundColor="yellow" /* Change the background color as needed */
-                buttonOpacity={1} /* Change the button opacity as needed */
-            />
+            <Footer iconColor="#5E4DB2"/>
         </div>
     );
 };

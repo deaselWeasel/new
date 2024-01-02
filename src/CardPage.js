@@ -30,7 +30,7 @@ const CardPage = () => {
                 <button className="action-button">Go to Card Settings</button>
     </div>
     </div>
-    <Footer />
+    <Footer/>
     </div>
     
   );

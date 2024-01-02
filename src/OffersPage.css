@@ -22,11 +22,11 @@
 .offers-header {
     width: 100%; /* Take full width of parent */
     padding: 20px; /* Add padding */
+    padding-left: 35px;
     box-sizing: border-box; /* Include padding in width */
     position: absolute; /* Relative to .central-alignment-container */
     text-align: left;
-    margin-bottom: 0;
-    top: 5%;
+    margin-bottom: 0;  
 }
 
 .offers-title {
@@ -49,12 +49,12 @@
     line-height: 20px;
 }
 
-.white-rectangle-box {
+.white-rectangle-box-offer {
     position: absolute;
     bottom: 0;
     width: 450px;
     max-width: 450px;
-    height: 75vh;
+    height: 80vh;
     background-color: white;
     left: 50%;
     transform: translateX(-50%);
@@ -90,7 +90,7 @@
     font-weight: 600;
     margin-top: 16px; /* Space from the image to the title */
     margin-bottom: 8px; /* Space between title and description */
-    padding: 0 16px; /* Padding on the sides of the text */
+    padding: 0; /* Padding on the sides of the text */
 }
 
 .offer-description {
@@ -98,14 +98,8 @@
     font-family: 'Objektiv VF', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    padding: 0 16px 16px; /* Padding on the sides and bottom of the text */
+    padding: 0 0 16px; /* Padding on the sides and bottom of the text */
     margin: 0; /* No additional margin */
-}
-
-/* Footer */
-.offers-wellText {
-    /* Custom styles for the wellText on the Offers page */
-    color: #5E4DB2; /* Change the color as needed */
 }
 
 @media (max-width: 600px) {
