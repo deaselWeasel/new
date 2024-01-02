@@ -1,12 +1,14 @@
 .offers-page-container {
+    background-image: url('./images/offers-bg.png'); /* Update with the correct path */
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Ensure it covers the full viewport height */
-    width: 100%; /* Ensure it covers the full width */
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center the .central-alignment-container */
-    align-items: center; /* Vertically center */
+    justify-content: center;
+    align-items: center;
 }
+
 
 .central-alignment-container {
     display: flex;
@@ -63,9 +65,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the start of the container */
+    padding-top: 10px;
     margin-top: 0;
 }
+
+.separator {
+    width: 25%;
+    height: 6px; /* This sets the thickness of the line */
+    background-color: var(--Elements-InactiveBG, #F2F2F2);
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
 
 .offer-container {
     width: 80%; /* Adjust width as needed */
