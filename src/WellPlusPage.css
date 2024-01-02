@@ -41,7 +41,7 @@
 
 .well-text {
     color: #FFF;
-    font-family: 'Objektiv VF', sans-serif;
+    font-family: objektiv-mk2, sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +52,7 @@
 
 .plus {
     color: #FD84FF;
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
@@ -65,7 +65,7 @@
 
 .more-text {
     color: #FFF;
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -128,7 +128,7 @@
 
     color: var(--PrimaryText, #292929);
     /* San Serif/Headings/H100 Leader */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -139,7 +139,7 @@
   .unlock-text {
     color: var(--PrimaryText, #292929);
     /* San Serif/Body/Regular */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -200,7 +200,7 @@
     align-self: stretch;
     color: var(--PrimaryLabel, #292929);
     /* San Serif/Body/Bold */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -211,7 +211,7 @@
     align-self: stretch;
     color: var(--PrimaryLabel, #292929);
     /* San Serif/Body/Regular */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

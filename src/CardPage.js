@@ -17,17 +17,17 @@ const CardPage = () => {
             <div className="content-container">
                 <div className="text-container">
                 <h1 className="balance-title">My Card</h1>
-                <p className="balance-amount">$1,500</p>
+                <p className="balance-amount-card">$1,500</p>
                 <p className="balance-description">Your balance</p>
                 </div>
                 <CreditCard {...cardInfo} />    
             </div>                      
     </div>
     <div className="action-buttons">
-                <button className="action-button">Add to Apple Wallet</button>
-                <button className="action-button">Lock Card Temporarily</button>
-                <button className="action-button">Report an Issue</button>
-                <button className="action-button">Go to Card Settings</button>
+                <button className="action-button-card">Add to Apple Wallet</button>
+                <button className="action-button-card">Lock Card Temporarily</button>
+                <button className="action-button-card">Report an Issue</button>
+                <button className="action-button-card">Go to Card Settings</button>
     </div>
     </div>
     <Footer/>
