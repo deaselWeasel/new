@@ -51,11 +51,11 @@
     letter-spacing: 0.064px;
   }
 
-  .balance-amount {
+  .balance-amount-card {
     margin: 0;
     color: #000;
     text-align: flex-start;
-    font-family: VIC;
+    font-family:VIC ;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
@@ -85,7 +85,7 @@
     margin: auto 0 50px 0; /* Centers the container on the page */
 }
 
-  .action-button {
+  .action-button-card {
     display: flex;
     width: 19.5625rem;
     padding: 1rem 1.5rem;
@@ -97,7 +97,7 @@
     background-blend-mode: hard-light;
 
     /* San Serif/Body/Regular */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
