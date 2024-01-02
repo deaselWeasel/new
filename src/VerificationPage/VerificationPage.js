@@ -22,14 +22,24 @@ const VerificationPage = () => {
     if (newPin[index] && index < 3) {
       inputRefs.current[index + 1].current.focus();
     }
-
-    // If all inputs have values, initiate the loading state
-    if (newPin.every(digit => digit !== '') && index === 3) {
+    if (newPin.every(digit => digit) && newPin.length === 4) {
       setIsLoading(true);
-      // Trigger the verification process here
-      // After the verification process, you should update the loading state accordingly
+      // Here, initiate the verification process
+      // After the verification process is complete, set isLoading to false
+    }
+    
+
+  };
+  const handleBackspace = (event, index) => {
+    if ((event.key === 'Backspace' || event.key === 'Delete') && index > 0) {
+      if (pin[index] === '') {
+        // Focus and clear the previous field if current is empty
+        inputRefs.current[index - 1].current.focus();
+        handleChange('', index - 1);
+      }
     }
   };
+
 
   return (
     <div className="verification-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
@@ -40,17 +50,18 @@ const VerificationPage = () => {
             Enter the verification code we've just sent to <br/>your phone.
           </p>
           <div className="verification-inputs">
-            {pin.map((digit, index) => (
-              <Input
-                key={index}
-                className="verification-digit-input"
-                maxLength={1}
-                value={digit}
-                onChange={(e) => handleChange(e.target.value, index)}
-                ref={inputRefs.current[index]}
-                disabled={isLoading}
-              />
-            ))}
+          {pin.map((digit, index) => (
+                <Input
+                  key={index}
+                  className="verification-digit-input"
+                  maxLength={1}
+                  value={digit}
+                  onChange={(e) => handleChange(e.target.value, index)}
+                  onKeyDown={(e) => handleBackspace(e, index)}
+                  ref={inputRefs.current[index]}
+                  disabled={isLoading}
+                />
+              ))}
           </div>
           <div className='verification-button-container'>
           <CustomButton text="Next: Activate my card"  type="primary1"  disabled={isLoading}  ></CustomButton>

@@ -6,9 +6,9 @@
     min-height: 100vh; // This will cover the full height of the viewport
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // Align content to the top
+    justify-content:center; // Align content to the top
     align-items: center;
-    position: relative; // Needed for absolute positioning of children
+     // Needed for absolute positioning of children
   }
   
   .overlay {
@@ -39,7 +39,7 @@
 
   .verification-description{
     color: var(--Primary, #292929);
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -93,7 +93,7 @@
   .verification-message {
     width: 100%; // Full width
     text-align: center; // Center the text
-    margin-top: auto; // Push to the bottom if inside a flex container
+    margin-top: 32.50rem; // Push to the bottom if inside a flex container
     color: #ffffff; // White text color
     font-size: 1rem; // Appropriate font size
     padding: 1rem; // Padding for spacing
