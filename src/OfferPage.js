@@ -15,6 +15,7 @@ const OffersPage = () => {
                     <p className='offers-description'>Offers you join will be converted<br/>into points here</p>
                 </div>
                 <div className="white-rectangle-box-offer">
+                    <div className="separator"></div>
                     {/* ... Your offer containers ... */}
                     <div className="offer-container">
                     <img src={imageOne} alt="Offer One" className="offer-image" />
