@@ -7,15 +7,18 @@ import CustomButton from '../CustomButton.js';
 import './../CustomButton.scss';
 import backgroundImage from './../images/bg1.jpg'; // Adjust the path to where your image is located
 import './Step1.scss'; 
-import CustomSteps from '../CustomStep.js';
+import CustomStep from '../CustomStep.js';
 import Footer from '../Footer.js'
+import { useNavigate } from 'react-router-dom';
 
+import { ReactComponent as PassportIcon } from '../images/PassportIcon.svg';
 
 const { Option } = Select;
 
 const Step1 = () => {
   const navigate = useNavigate();
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (values) => {
     console.log('Form Data submitted:', values);
@@ -33,8 +36,11 @@ const Step1 = () => {
 
   return (
     <div style ={backgroundStyle}>
+      
       <div className="step1-overlay">
-        <CustomSteps currentStep={2}/>
+      <div className="step-container">
+        <CustomStep currentStep={2} /> 
+      </div>  
         <div className="step1-header">
           <h1 className="step1-title">Abidal,</h1>
           <p className="step1-subtitle">We've found you!</p>
@@ -52,28 +58,32 @@ const Step1 = () => {
         name="mobileNumber"
         rules={[{ required: true, message: 'Please enter your mobile number.' }]}
       >
-        <Input prefix={<PhoneOutlined/>} placeholder="Enter your mobile" allowClear />
+        <Input placeholder="Enter your mobile" allowClear />
       </Form.Item>
       <Form.Item
         label="TFN"
         name="tfn"
         rules={[{ required: true, message: 'Please enter your Tax File Number.' }]}
       >
-        <Input prefix={<FileOutlined/>} placeholder="Tax File Number" allowClear />
+        <Input placeholder="Tax File Number" allowClear />
       </Form.Item>
       <Form.Item
         label="Passport"
         name="passport"
         rules={[{ required: true, message: 'Please enter your Passport Number.' }]}
       >
-        <Input prefix={<IdcardOutlined/>} placeholder="Passport Number" allowClear />
+        <Input prefix={<PassportIcon/>} placeholder="Passport Number" allowClear />
       </Form.Item>
       <Form.Item
         label="Medicare Fund"
         name="medicareFund"
         >
-        <CustomDropdown className="custom-dropdown"/>
-     </Form.Item>    
+        <CustomDropdown className="custom-dropdown"/>       
+     </Form.Item>
+      <Form.Item>
+        <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>
+        <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
+      </Form.Item>
     </Form>
     <div className="step1-buttons">
         <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>

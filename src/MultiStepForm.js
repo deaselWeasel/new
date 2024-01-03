@@ -54,7 +54,7 @@ const MultiStepForm = () => {
         {field.type === 'text' ? (
           <input type="text" placeholder={field.placeholder} />
         ) : (
-          <DatePicker placeholder={field.placeholder} style={{ width: '104%' }} />
+          <DatePicker placeholder={field.placeholder} style={{ width: '104%' }}/>
         )}
       </div>
     ));
@@ -107,7 +107,8 @@ const MultiStepForm = () => {
         </div>
       </form>
       <div className="cancel-button-container">
-        <button onClick={() => navigate('/')} className="customButton customButton-form--alternate">
+
+        <button type="button" onClick={() => navigate('/')} className="customButton customButton-alternate">
           I'll do this later
         </button>
       </div>

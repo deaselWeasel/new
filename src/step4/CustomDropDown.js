@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Input, Button, Menu, Dropdown } from 'antd';
 import { DownOutlined, MedicineBoxOutlined } from '@ant-design/icons';
+import { ReactComponent as MedicareIcon } from '../images/MedicareIcon.svg';
 
 const CustomDropdown = () => {
   const [value, setValue] = useState('');
@@ -24,7 +25,7 @@ const CustomDropdown = () => {
       <Input
         value={value}
         readOnly
-        prefix={<MedicineBoxOutlined />}
+        prefix={<MedicareIcon />}
         suffix={<DownOutlined />}
         onClick={() => setVisible(!visible)}
         placeholder="Select your Medicare Fund"
