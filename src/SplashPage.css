@@ -56,9 +56,9 @@
       color: white; /* White text */
       border: none;
       padding: 10px 20px;
-      width: 300px;
+      width: 350px;
       border-radius: 30px;
-      height: 50px;
+      height: 60px;
       /* Add other styles as needed */
       font-family: 'Objektiv VF', sans-serif; /* Fallback to sans-serif if Objektiv VF is not available */
       font-size: 14px;
@@ -68,9 +68,11 @@
       text-align: center;
     }
   
-    .customButton--alternate {
-      background-color: #FFF;
-      color: black; 
+    .customButton-alternate {
+      background-color: gray;
+      color: black;
+      border: 1px solid var(--navigation-buttons-secondary-outline, rgba(28, 28, 28, 0.14));
+      background: var(--navigation-buttons-secondary-bg, rgba(255, 255, 255, 0.00));
     }
 
     .customButton:hover {

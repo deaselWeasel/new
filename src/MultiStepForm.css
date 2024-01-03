@@ -6,7 +6,7 @@
   align-items: center; /* Center children horizontally */
   justify-content: flex-start; /* Align children to the start vertically */
   max-width: 450px;
-  height: 80vh;
+  height: 85vh;
   margin: auto;
   padding: 20px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -1.92%, rgba(255, 255, 255, 0.63) 36.31%, #FFF 97.88%);
@@ -45,8 +45,8 @@
   
   .form-field input[type="text"],
   .ant-picker {
-    width: 100%;
-    padding: 15px 5px;
+    width: 90%;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     flex-basis: 25%;
