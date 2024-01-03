@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: left; /* Center children horizontally */
   justify-content: flex-start; /* Align children to the start vertically */
-  max-width: 6450px; /* Adjusted for a wider form */
+  max-width: 450px; /* Adjusted for a wider form */
   width: 100%;
   height: 85vh;
   margin: auto; /* Ensures central alignment */
@@ -39,11 +39,8 @@
 }
 
 .step1-buttons {
-  width: 90%;
-  margin: auto;
+  width: 85%;
 }
-
-
 
   .step1-header {
     top: 50%; /* Adjust these values as needed */
