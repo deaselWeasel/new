@@ -1,7 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Select } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import { FileOutlined, IdcardOutlined, PhoneOutlined,MedicineBoxOutlined } from '@ant-design/icons';
 import CustomDropdown from './CustomDropDown.js';
 import CustomButton from '../CustomButton.js';
 import './../CustomButton.scss';
@@ -9,14 +8,13 @@ import backgroundImage from './../images/bg1.jpg'; // Adjust the path to where y
 import './Step1.scss'; 
 import CustomStep from '../CustomStep.js';
 import Footer from '../Footer.js'
-import { useNavigate } from 'react-router-dom';
+
 
 import { ReactComponent as PassportIcon } from '../images/PassportIcon.svg';
 
 const { Option } = Select;
 
 const Step1 = () => {
-  const navigate = useNavigate();
   const [form] = Form.useForm();
   const navigate = useNavigate();
 
@@ -30,6 +28,7 @@ const Step1 = () => {
     backgroundPosition: 'center', // This centers the background image
     height: '100vh', // Adjust the height as needed
     width: '100%',
+    alignItems: 'center',
   };
 
 
@@ -80,10 +79,6 @@ const Step1 = () => {
         >
         <CustomDropdown className="custom-dropdown"/>       
      </Form.Item>
-      <Form.Item>
-        <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>
-        <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
-      </Form.Item>
     </Form>
     <div className="step1-buttons">
         <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>
