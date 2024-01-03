@@ -59,11 +59,10 @@
 // YourCustomStyles.scss
 .custom-datepicker {
     min-width: var(--select-min-width, 21rem);
-    min-height: var(--select-min-height, 3rem);
     margin-top: -0.625rem; // Space above the heading
     margin-left: -1.562rem;
     margin-bottom: 0.313rem;
-    
+    padding: 0 0 0 10px;
 
     .ant-picker-suffix {
       position: absolute;
@@ -104,7 +103,7 @@
     font-weight: 400;
     line-height: 1.25rem; /* 142.857% */
     position: absolute;
-    top: 585px;
+    top: 600px;
     left: 55px;
     width: 21rem;
     margin: 20px;
@@ -176,9 +175,6 @@
     font-family: 'Gabriela';
     font-size: 32px;
     font-weight: 400;
-
-    
   }
   
-
 
