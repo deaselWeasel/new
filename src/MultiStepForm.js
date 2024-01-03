@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './MultiStepForm.css';
-import './SplashPage.css';
+import './CustomButton.scss';
 import { DatePicker } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import CustomStep from './CustomStep';
@@ -107,6 +107,7 @@ const MultiStepForm = () => {
         </div>
       </form>
       <div className="cancel-button-container">
+
         <button type="button" onClick={() => navigate('/')} className="customButton customButton-alternate">
           I'll do this later
         </button>

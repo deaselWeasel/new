@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Select } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import { FileOutlined, IdcardOutlined, PhoneOutlined,MedicineBoxOutlined } from '@ant-design/icons';
 import CustomDropdown from './CustomDropDown.js';
 import CustomButton from '../CustomButton.js';
@@ -15,6 +16,7 @@ import { ReactComponent as PassportIcon } from '../images/PassportIcon.svg';
 const { Option } = Select;
 
 const Step1 = () => {
+  const navigate = useNavigate();
   const [form] = Form.useForm();
   const navigate = useNavigate();
 
@@ -76,14 +78,17 @@ const Step1 = () => {
         label="Medicare Fund"
         name="medicareFund"
         >
-        <CustomDropdown className="custom-dropdown"/>
-        
+        <CustomDropdown className="custom-dropdown"/>       
      </Form.Item>
       <Form.Item>
         <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>
         <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
       </Form.Item>
     </Form>
+    <div className="step1-buttons">
+        <CustomButton text="Next: One Time passcode" type="primary" onClick={() => navigate('/verify')}></CustomButton>
+        <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
+      </div>
     </div>
     <Footer/>
   </div>
