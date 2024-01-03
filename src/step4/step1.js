@@ -28,14 +28,13 @@ const Step1 = () => {
     backgroundPosition: 'center', // This centers the background image
     height: '100vh', // Adjust the height as needed
     width: '100%',
-    alignItems: 'center',
+  
   };
 
 
 
   return (
     <div style ={backgroundStyle}>
-      
       <div className="step1-overlay">
       <div className="step-container">
         <CustomStep currentStep={2} /> 
@@ -85,7 +84,7 @@ const Step1 = () => {
         <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
       </div>
     </div>
-    <Footer/>
+    <Footer/>   
   </div>
   );
 };
