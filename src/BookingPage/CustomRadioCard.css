@@ -1,0 +1,65 @@
+@import url("https://use.typekit.net/gpx0lrb.css");
+.custom-radio-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.custom-radio-wrapper .ant-radio-wrapper {
+  margin-right: 8px;
+}
+.custom-radio-wrapper .ant-radio-inner {
+  width: 24px;
+  height: 24px;
+  border-color: black;
+  border-width: 2px;
+}
+.custom-radio-wrapper .ant-radio-inner::after {
+  content: "";
+  position: absolute;
+  top: -32.5%;
+  left: -36%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  margin-top: -5.5px;
+  margin-left: -5.5px;
+  border-radius: 60%;
+  background-color: #5E4DB2;
+}
+.custom-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #7C5AC2;
+  background-color: white;
+}
+.custom-radio-wrapper .ant-radio-checked .ant-radio-inner::after {
+  width: 46px;
+  height: 44px;
+  background-color: #5E4DB2;
+}
+.custom-radio-wrapper .radio-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-radio-wrapper .radio-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.custom-radio-wrapper .radio-label {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: var(--Primary, #292929); /* San Serif/Body/Medium */
+  font-family: objektiv-mk2;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 142.857% */
+  margin-left: -25px;
+}/*# sourceMappingURL=CustomRadioCard.css.map */
