@@ -1,0 +1,13 @@
+.B-colour {
+  color: #6E5DC6;
+}
+
+.circular-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=MenuButton.css.map */

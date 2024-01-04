@@ -1,0 +1,159 @@
+@import url("https://use.typekit.net/gpx0lrb.css");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+.booking-image {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.white-rectangle-box {
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+  max-width: 450px;
+  min-width: 300px;
+  height: 82vh;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  border-radius: 32px 32px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+@media (max-width: 768px) {
+  .white-rectangle-box {
+    min-height: 50vh;
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .white-rectangle-box {
+    width: 100%;
+    max-width: none;
+    border-radius: 24px 24px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.custom-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: -150px;
+}
+
+.custom-radio-group > h3:not([class]) {
+  margin-left: -25px;
+}
+
+.custom-datepicker {
+  min-width: var(--select-min-width, 21rem);
+  margin-top: -0.625rem;
+  margin-left: -1.562rem;
+  margin-bottom: 0.313rem;
+  padding: 0 0 0 10px;
+}
+.custom-datepicker .ant-picker-suffix {
+  position: absolute;
+  left: 2px;
+  transition: all 0.3s;
+}
+.custom-datepicker .ant-picker-suffix svg {
+  fill: #333;
+}
+.custom-datepicker .ant-picker-input > input {
+  padding-left: 25px;
+}
+
+.text {
+  color: var(--Primary, #292929); /* San Serif/Body/Medium */
+  font-family: objektiv-mk2;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: italic;
+  line-height: 1.25rem; /* 142.857% */
+  margin-bottom: 0px;
+}
+
+.button {
+  border-radius: 0.75rem;
+  border: 1px solid var(--navigation-buttons-primary-outline, rgba(255, 255, 255, 0));
+  background: var(--text-text-brand, #5E4DB2);
+  color: white;
+  font-family: objektiv-mk2;
+  font-size: 0.975rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+  position: absolute;
+  top: 600px;
+  left: 55px;
+  width: 21rem;
+  margin: 20px;
+  margin-left: -1.25rem;
+}
+.button:hover {
+  color: white !important;
+}
+.button:active {
+  color: white !important;
+}
+.button:disabled {
+  color: white !important;
+}
+
+.down-icon {
+  margin-top: 0px; /* Adjust this value as needed */
+  /* OR for more specific positioning */
+  position: relative;
+  top: -175px; /* Adjust this value to move the icon up/down */
+  font-size: 24px;
+  color: #343434;
+  opacity: 0.2;
+}
+
+.booking-button {
+  position: absolute;
+  top: calc(100vh - 85%);
+  left: 33%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  gap: 3px;
+  height: 2.25rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.booking-button .ant-btn {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: none;
+}
+
+.booking-button .ant-btn.active {
+  background-color: white;
+  color: black !important;
+  border: 1px solid grey;
+}
+
+.booking-header h2 {
+  position: absolute;
+  top: 50px; /* Distance from the top of the parent container */
+  left: 50%; /* Start at the halfway point of the parent */
+  transform: translateX(-64%); /* Shifts the element left by half its own width to center it */
+  width: 80%;
+  color: #000000;
+  text-align: center;
+  font-family: "Gabriela";
+  font-size: 32px;
+  font-weight: 400;
+}/*# sourceMappingURL=Booking.css.map */
