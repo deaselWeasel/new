@@ -8,11 +8,11 @@ import CustomStep from './CustomStep';
 const fieldGroups = [
     [
       { label: 'First Name', placeholder: 'John', type: 'text', key: 'firstName' },
-      { label: 'Last Name', placeholder: 'Bhatti', type: 'text', key: 'lastName' },
+      { label: 'Last Name', placeholder: 'Citizen', type: 'text', key: 'lastName' },
       { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
     ],
     [
-      { label: 'Last Name', placeholder: 'bhatti', type: 'text', key: 'lastName' },
+      { label: 'Last Name', placeholder: 'Citizen', type: 'text', key: 'lastName' },
       { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
       { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'text', key: 'medicare' },
     ],
@@ -53,8 +53,10 @@ const MultiStepForm = () => {
         <label>{field.label}</label>
         {field.type === 'text' ? (
           <input type="text" placeholder={field.placeholder} />
+        ) : field.type === 'number' ? (
+          <input type="number" placeholder={field.placeholder} />
         ) : (
-          <DatePicker placeholder={field.placeholder} style={{ width: '104%' }}/>
+          <DatePicker placeholder={field.placeholder} style={{ width: '102%' }}/>
         )}
       </div>
     ));
@@ -87,7 +89,7 @@ const MultiStepForm = () => {
   return (
     <div className="form-container">
       <div className="custom-step-container">
-        <CustomStep currentStep={currentStep + 1} /> 
+        <CustomStep currentStep={1} /> 
       </div>          
       <form onSubmit={handleSubmit}>               
         <div className="intro-text">

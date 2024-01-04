@@ -112,7 +112,9 @@
     line-height: 20px; /* 142.857% */
   }
   
-
+  .action-buttons a, .action-buttons a:visited, .action-buttons a:hover, .action-buttons a:active {
+    text-decoration: none;
+  }
 
 .bottom-page-container {
     background: rgba(255, 255, 255, 0.90);
@@ -140,3 +142,22 @@
         padding: 0; /* Ensure no padding is affecting layout */
     }
       
+    .ghost-button {
+      background: transparent;
+      border: none;
+      color: transparent;
+      cursor: pointer;
+      padding: 10px;
+      outline: none;
+      position: absolute;
+      bottom: 27%;
+      left: 40%;
+    }
+    
+    .ghost-button:hover,
+    .ghost-button:focus {
+      background: transparent;
+      color: transparent;
+      outline: none;
+    }
+    

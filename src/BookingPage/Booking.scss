@@ -5,20 +5,21 @@
     background-position: center;
     height: 100vh; // This will cover the full height of the viewport
     flex-direction: column;
-    justify-content: space-between; // Align content to the top
+    justify-content: center; // Align content to the top
     align-items: center;
     position: relative; // Needed for absolute positioning of children
+    margin: auto;
 }
 
 
 
-.white-rectangle-box {
+.booking-box {
     position: absolute;
     bottom: 0;
     width: 80vw; // Use viewport width units for responsive width
     max-width: 450px; // Max width stays the same, it won't grow larger than this on big screens
     min-width: 300px; // Prevent the box from getting too small on narrow screens
-    height: 82vh;
+    height: 85vh;
     background-color: white;
     left: 50%;
     transform: translateX(-50%);
@@ -29,6 +30,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 10px; // Add some padding inside the box
+    margin-bottom: 0;
 
     // Media queries for responsiveness
     @media (max-width: 768px) { // Adjustments for tablet and mobile views
@@ -49,7 +51,7 @@
 .custom-radio-group {
     display: flex;
     flex-direction: column;
-    margin-top: -150px;
+    margin-top: -165px;
   }
   .custom-radio-group > h3:not([class]) {
     margin-left: -25px;
@@ -59,7 +61,7 @@
 // YourCustomStyles.scss
 .custom-datepicker {
     min-width: var(--select-min-width, 21rem);
-    margin-top: -0.625rem; // Space above the heading
+    margin-top: 0; // Space above the heading
     margin-left: -1.562rem;
     margin-bottom: 0.313rem;
     padding: 0 0 0 10px;
@@ -103,7 +105,7 @@
     font-weight: 400;
     line-height: 1.25rem; /* 142.857% */
     position: absolute;
-    top: 600px;
+    top: 575px;
     left: 55px;
     width: 21rem;
     margin: 20px;
@@ -129,7 +131,7 @@
     margin-top: 0px; /* Adjust this value as needed */
     /* OR for more specific positioning */
     position: relative;
-    top: -175px; /* Adjust this value to move the icon up/down */
+    top: -155px; /* Adjust this value to move the icon up/down */
     font-size: 24px;
     color: #343434;
     opacity: 0.2;
@@ -137,7 +139,7 @@
 
 .booking-button {
     position: absolute; // This takes the container out of the document flow
-    top: calc(100vh - 85%); // Adjust this value to move up/down from the bottom of the viewport
+    top: calc(100vh - 88%); // Adjust this value to move up/down from the bottom of the viewport
     left: 33%; // Center horizontally
     transform: translate(-50%, -50%); // Adjust this value to center the container
     z-index: 10; // Ensure it's above other elements
@@ -164,13 +166,11 @@
   }
   .booking-header h2{
     position: absolute;
-    top: 50px; /* Distance from the top of the parent container */
+    top: 10px; /* Distance from the top of the parent container */
     left: 50%; /* Start at the halfway point of the parent */
     transform: translateX(-64%); /* Shifts the element left by half its own width to center it */
     width: 80%;
     color:#000000;
-
-
     text-align: center;
     font-family: 'Gabriela';
     font-size: 32px;

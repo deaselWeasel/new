@@ -2,6 +2,7 @@ import React from 'react';
 import './HomePage2.css'; // Make sure this path is correct
 import CreditCard from './CreditCard';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 
 const cardInfo = {
@@ -25,7 +26,12 @@ const HomePage2 = () => {
             </div> 
       </div>
       <div className="action-buttons">
-                <button className="action-button">Book an Appointment</button>
+        <Link to="/booking">
+          <button className="action-button">Book an Appointment</button>
+        </Link> 
+        <Link to="/plus">
+          <button className="ghost-button">View Offers</button>
+        </Link>    
         </div> 
       <div className="bottom-page-container">
         <p className="unlock-text">You're all caught up</p>

@@ -2,6 +2,9 @@ import React from 'react';
 import './ProfilePage.css'; // Make sure this path is correct
 import CreditCard from './CreditCard';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 
 const cardInfo = {
@@ -10,6 +13,13 @@ const cardInfo = {
 };
 
 const ProfilePage = () => {
+
+  const navigate = useNavigate();
+
+  const handleProfileClick = () => {
+    navigate('/setup');
+  };
+
   return (
     <div className="contact-page-container">
       <div className="top-page-container">
@@ -18,18 +28,18 @@ const ProfilePage = () => {
         <CreditCard {...cardInfo} />
         </div> 
       </div>
-      <div className="profile-box">
-        <div className="profile-content">
-          <div className="profile-text">
-            <h2>Set up your Profile</h2>
-            <p>Don’t be a stranger, tell us more about you.</p>
-          </div>
-          <div className="profile-loader">
-            {/* Assuming you're using an SVG or an icon library for the loader */}
-            <div className="loader-icon"></div>
-          </div>
+      <button className="profile-box" onClick={handleProfileClick} type="button">
+      <div className="profile-content">
+        <div className="profile-text">
+          <h2>Set up your Profile</h2>
+          <p>Don’t be a stranger, tell us more about you.</p>
+        </div>
+        <div className="profile-loader">
+          {/* Loader icon here */}
+          <div className="loader-icon"></div>
         </div>
       </div>
+    </button>
       <div className="bottom-page-container">
         <p className="unlock-text">Set up your profile to unlock more.</p>
       </div>

@@ -48,7 +48,7 @@ function BookingPage() {
           New Booking
         </Button>    
         </div>
-      <div className="white-rectangle-box">
+      <div className="booking-box">
             <DownOutlined className='down-icon' />
         <div className='custom-radio-group'>
         <h3 >Recent bookings</h3>    
@@ -85,9 +85,6 @@ function BookingPage() {
         <CustomDropdown/>
         <CustomButton text={"Show me available times"} type="button"/>
         </div>
-        
-        
-        
       </div>
       <Footer iconColor="#5E4DB2"/>
     </div>

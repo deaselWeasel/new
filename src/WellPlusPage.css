@@ -25,7 +25,7 @@
 .above-cards-text-container {
     width: calc(100% - 40px); /* Match width with the white-box accounting for padding */
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     align-self: center; /* Align with the parent center */
     padding: 0 20px; /* Padding to match the white-box */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -85,7 +85,7 @@
     background: linear-gradient(180deg, rgba(253, 132, 255, 0.50) 0%, rgba(253, 132, 255, 0.00) 100%), #943D73;
     background-blend-mode: soft-light, normal;
     position: absolute;
-    bottom: -5%; /* Half outside the white box */
+    bottom: 10%; /* Half outside the white box */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust horizontal centering */
     /* Other styling as needed */
@@ -149,7 +149,9 @@
 .perk-card {
     display: flex;
     text-align: left;
+    margin-left: 9px;
     margin-bottom: 0px; /* Spacing between cards */
+    margin-right: 0;
     width: 100%; /* Set a fixed width to center in white box */
     height: 110px; /* Set a fixed height for consistency */
     display: flex;
@@ -167,7 +169,7 @@
     align-items: center;
     gap: 15px;
     width: 100%; /* Ensures the container fits within the white box */
-    margin-bottom: 50px; /* Add bottom margin for space above the JOIN NOW button */
+    margin-bottom: 40px; /* Add bottom margin for space above the JOIN NOW button */
 }
 
 .perk-content {
@@ -180,23 +182,26 @@
     display: flex;
     align-items: center;
     width: 100%; /* Ensures the container uses the full width of the card */
-    height: 125px;
 }
 .tick-icon {
     color: #5E4DB2; /* Ant Design's success color */
     font-size: 24px; /* Icon size */
-    margin-right: 0; /* Spacing between icon and text */
+    margin-left: -20px; /* Spacing between icon and text */
+    margin-right: 5px;
     flex-shrink: 0; /* Prevents the icon from shrinking */
 }
 
-.text-container {
+.plus-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: flex-start; /* Aligns text to the left */
+    width: 100%;
 }
 
 .perk-title {
     margin-bottom: -10px; /* Adjusted for better spacing */
+    margin-left: 8px;
     align-self: stretch;
     color: var(--PrimaryLabel, #292929);
     /* San Serif/Body/Bold */
@@ -217,7 +222,21 @@
     font-weight: 400;
     line-height: 20px; /* 142.857% */
     margin-bottom: 0px;
+    margin-left: 8px;
 }
+
+.plus-return {
+    background: none; /* Removes the background */
+    border: none; /* Removes the border */
+    color: white; /* Sets the text color, choose a color that fits your design */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    padding: 8px 16px; /* Adds some padding around the text for better clickability */
+    font-size: 16px; /* Adjust the font size as needed */
+    text-decoration: none; /* Optionally, underline the text to emphasize it's a link */
+    position: absolute;
+    bottom: 5%;
+  }
+  
 
 @media (max-width: 600px) {
     .content-container {
