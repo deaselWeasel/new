@@ -76,19 +76,7 @@ const ActivityPage = () => {
                 }
             ]
         },
-        {   
-            date:'Tue 1 October',
-            items:[
-                {
-                    initials: "TSC",
-                    description: "Tarneit Super Clinic",
-                    time: "10:25 pm",
-                    details: "TSClinic.com/clinic",
-                    amount: "$42.45",
-                    color: '#FEF6DD'
-                }
-            ]
-        }
+        
         // ... more dates
       ];
       
@@ -115,7 +103,7 @@ const ActivityPage = () => {
             <Row justify="center" style={{width:'100%'}}>
                 <Col xs={24} sm={20} md={18} lg={16} xl={14}>
                     <div className="overlay-activity">
-                    <DownOutlined className="down-icon" />
+                    <DownOutlined className="activity-down-icon" />
                         {/* Month and Year header */}
                         {transactions.length > 0 && (
                             <div className="month-year-header">{monthYear}</div>
