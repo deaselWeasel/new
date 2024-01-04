@@ -25,7 +25,7 @@ const FooterMenu = () => {
                     <OfferIcon/>
                 </li>
                 <li>
-                    <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Talk to Us</Link>
+                    <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>Talk to Us</Link>
                     <TalkIcon/>
                 </li>
                 <li>
