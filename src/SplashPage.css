@@ -89,12 +89,6 @@
       .customButton--alternate:hover {
         background-color: #f0f0f0; /* Light grey on hover */
       }
-
-      .cancel-button-container {
-        margin-top: 10px;
-        text-align: center;
-        border: black;
-      }
   
     .iconButton {
       min-width: 50px;
