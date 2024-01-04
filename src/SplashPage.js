@@ -12,7 +12,7 @@ const SplashPage = () => {
     <div className="splash-container">
       <div className="main-action-buttons">
         <Button className="customButton"> Do Sign in with Magic Link</Button>
-        <Link to="/setup">
+        <Link to="/profile">
           <Button className="customButton">Join Well Free</Button>
         </Link>
       </div>

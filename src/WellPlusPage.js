@@ -2,9 +2,19 @@ import React from 'react';
 import './WellPlusPage.css';
 import { Card } from 'antd';
 import { CheckSquareFilled } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const WellPlusPage = () => {
+
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
+
   const perks = [
     {
       title: 'Priority Access',
@@ -42,7 +52,7 @@ const WellPlusPage = () => {
                   <Card key={index} className='perk-card'>
                       <div className="icon-and-text-container">
                           <CheckSquareFilled className="tick-icon" />
-                          <div className="text-container">
+                          <div className="plus-text-container">
                               <h3 className="perk-title">{perk.title}</h3>
                               <p className="perk-description">{perk.description}</p>
                           </div>
@@ -50,8 +60,9 @@ const WellPlusPage = () => {
                   </Card>
               ))}
           </div>
-          <button className="join-now-button">JOIN NOW</button>
+          <button className="join-now-button">JOIN NOW</button>    
       </div>
+      <button className="plus-return" onClick={goBack}>Go Back</button>
       </div>
     </div>
   );

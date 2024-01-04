@@ -102,6 +102,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
+    color: black;
   }
   
   .action-button:hover {

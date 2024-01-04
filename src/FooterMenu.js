@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HomeOutlined, HistoryOutlined, HeartOutlined, MessageOutlined, UserOutlined } from '@ant-design/icons';
 import './FooterMenu.css';
-import { ReactComponent as ProfileIcon } from './images/Menu/_Icon.svg';
+import { ReactComponent as CardIcon } from './images/Menu/CardIcon.svg';
 import { ReactComponent as TalkIcon } from './images/Menu/Talk.svg';
 import { ReactComponent as OfferIcon } from './images/Menu/Offer.svg';
 import { ReactComponent as ActivityIcon } from './images/Menu/Activity.svg';
@@ -29,8 +29,8 @@ const FooterMenu = () => {
                     <TalkIcon/>
                 </li>
                 <li>
-                    <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>Profile</Link>
-                    <ProfileIcon/>
+                    <Link to="/card" style={{ textDecoration: 'none', color: 'inherit' }}>Card</Link>
+                    <CardIcon/>
                 </li>
             </ul>
         </nav>

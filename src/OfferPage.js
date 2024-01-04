@@ -3,9 +3,18 @@ import './OffersPage.css';
 import Footer from './Footer';
 import imageOne from './images/image 1.png'; // Update with the path to your image
 import imageTwo from './images/image 2.png'; // Update with the path to your image
+import { useNavigate } from 'react-router-dom';
+
 
 
 const OffersPage = () => {
+
+    const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/plus');
+  };
+
 
     return (
         <div className="offers-page-container">
@@ -22,11 +31,12 @@ const OffersPage = () => {
                     <h2 className="offer-title">Last minute physio sessions</h2>
                     <p className="offer-description">Book now and get discounted physio</p>
                 </div>
-                <div className="offer-container">
+                <div className="offer-container" onClick={handleClick}>
                     <img src={imageTwo} alt="Offer Two" className="offer-image" />
                     <h2 className="offer-title">Join Well Plus</h2>
                     <p className="offer-description">And get unlimited access to GPs</p>
                 </div>
+
                 </div>
             </div> 
             <Footer iconColor="#5E4DB2"/>
