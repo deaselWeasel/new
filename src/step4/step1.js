@@ -36,9 +36,9 @@ const Step1 = () => {
   return (
     <div style ={backgroundStyle}>
       <div className="step1-overlay">
-      <div className="step-container">
-        <CustomStep currentStep={2} /> 
-      </div>  
+        <div className="step-container">
+          <CustomStep currentStep={2} /> 
+        </div>  
         <div className="step1-header">
           <h1 className="step1-title">Abidal,</h1>
           <p className="step1-subtitle">We've found you!</p>
@@ -54,21 +54,21 @@ const Step1 = () => {
        
         label="Mobile Number"
         name="mobileNumber"
-        rules={[{ required: true, message: 'Please enter your mobile number.' }]}
+        rules={[{ message: 'Please enter your mobile number.' }]}
       >
         <Input placeholder="Enter your mobile" allowClear />
       </Form.Item>
       <Form.Item
         label="TFN"
         name="tfn"
-        rules={[{ required: true, message: 'Please enter your Tax File Number.' }]}
+        rules={[{ message: 'Please enter your Tax File Number.' }]}
       >
         <Input placeholder="Tax File Number" allowClear />
       </Form.Item>
       <Form.Item
         label="Passport"
         name="passport"
-        rules={[{ required: true, message: 'Please enter your Passport Number.' }]}
+        rules={[{ message: 'Please enter your Passport Number.' }]}
       >
         <Input prefix={<PassportIcon/>} placeholder="Passport Number" allowClear />
       </Form.Item>
