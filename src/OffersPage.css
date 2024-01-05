@@ -44,7 +44,7 @@
 
 .offers-description {
     color: #000;
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -98,7 +98,7 @@
 
 .offer-title {
     color: #000;
-    font-family: 'Objektiv VF', sans-serif;
+    font-family: objektiv-mk2, sans-serif;
     font-size: 20px;
     font-weight: 600;
     margin-top: 16px; /* Space from the image to the title */
@@ -108,7 +108,7 @@
 
 .offer-description {
     color: #000;
-    font-family: 'Objektiv VF', sans-serif;
+    font-family: objektiv-mk2, sans-serif;
     font-size: 16px;
     font-weight: 400;
     padding: 0 0 16px; /* Padding on the sides and bottom of the text */

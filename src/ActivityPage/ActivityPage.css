@@ -36,7 +36,7 @@
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 16%;
+  top: 14%;
 }
 
 .left-box, .right-box {
@@ -106,12 +106,12 @@
 .overlay-activity {
   position: fixed;
   bottom: 0;
-  top: calc(60px + 10.625rem);
+  top: calc(30px + 10.625rem);
   width: 100%; /* Responsive width based on viewport width */
   max-width: 450px; /* Ensures element doesn't exceed the parent's width */
   min-width: 250px; /* Minimum width to maintain usability */
   height: auto;
-  max-height: 90vh;
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,28 +170,26 @@
   padding-left: 20px; /* Add padding to align with the content below */
   padding-top: 20px; /* Add padding at the top */
   margin-bottom: 10px; /* Space before the list starts */
-  font-family: "Objektiv VF", sans-serif; /* The specified font family */
+  font-family: objektiv-mk2, sans-serif; /* The specified font family */
   width: 100%; /* Ensure the header spans the full width */
+  margin-top: -50px;
 }
 .overlay-activity .date-header {
   /* Existing styles... */
   padding-left: 20px; /* Align with the month-year header */
 }
 
-.down-icon {
-  margin-top: 10px; /* Adjust this value as needed */
-  /* OR for more specific positioning */
-  position: relative;
-  top: 10px; /* Adjust this value to move the icon up/down */
+.activity-down-icon {
+  margin-top: 50px; /* Adjust this value as needed */
+  position: absolute;
+  top: -40px; /* Adjust this value to move the icon up/down */
   font-size: 24px;
   color: #343434;
   opacity: 0.2;
 }
 
 .overlay-list {
-  height: 130px; /* Set a fixed height for the list container */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  /* Optional padding for aesthetics */
+  height: 150px; /* Set a fixed height for the list container */
 }
 
 /* Styling for the scrollbar (optional) */
