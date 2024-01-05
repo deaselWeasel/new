@@ -50,19 +50,21 @@
   }
   
   .form-field input[type="text"],
+  .form-field input[type="number"],
   .ant-picker {
     width: 90%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     flex-basis: 25%;
+    font-size: 16px; /* Prevents zooming on mobile devices */
   }
 
-  .form-field input[type="text"],
-.form-field textarea {
-  font-size: 16px; /* Prevents zooming on mobile devices */
-  /* Other existing styles for your input fields */
-}
+  /* Styles for textarea */
+  .form-field textarea {
+    font-size: 16px; /* Prevents zooming on mobile devices */
+    /* Add additional styles for textarea here if needed */
+  }
   
   /* Text styles */
   .heading-text,
