@@ -91,5 +91,27 @@
     margin-bottom: 10px; /* Space between this text and the next button */
   }
 
-  
+  .setup-datepicker {
+    min-width: var(--select-min-width, 21rem);
+    margin-top: 0; /* Space above the heading */
+    margin-bottom: 0.313rem;
+    padding: 0 0 0 10px;
+    width: 102%;
+}
+
+.setup-datepicker .ant-picker-suffix {
+    position: absolute;
+    left: 2px; /* Adjust the spacing to your preference */
+    transition: all 0.3s; /* Optional: for smooth icon transition */
+}
+
+.setup-datepicker .ant-picker-suffix svg {
+    fill: #333; /* This is a dark gray, but you can choose any color you wish */
+}
+
+.setup-datepicker .ant-picker-input > input {
+    padding: 20px 20px 20px 45px;
+    font-size: 16px;
+}
+
   

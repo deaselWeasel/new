@@ -8,6 +8,7 @@ import CustomDropdown from './CustomDropdown';
 import CustomButton from '../CustomButton';
 import { DownOutlined  } from '@ant-design/icons';
 import Footer from '../Footer';
+import { ReactComponent as DateIcon } from '../images/DateIcon.svg';
 
 
 
@@ -80,7 +81,12 @@ function BookingPage() {
         onChange={onRadioChange}
       />
         <h3>Preferred Date</h3>
-        <DatePicker style={{ width: '95%',borderRadius: 'var(--radius-btn-radius, 0.25rem)' }} className="custom-datepicker" placeholder="dd/mm/yy" />
+        <DatePicker
+        style={{ width: '95%', borderRadius: 'var(--radius-btn-radius, 0.25rem)' }}
+        className="custom-datepicker"
+        placeholder="dd/mm/yy"
+        suffixIcon={<DateIcon />} // Custom icon
+        />
         <h3>How long do you need?</h3>
         <CustomDropdown/>
         <CustomButton text={"Show me available times"} type="button"/>

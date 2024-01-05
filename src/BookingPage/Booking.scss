@@ -79,7 +79,8 @@
   
     // Adjust the padding to make room for the icon on the left
     .ant-picker-input > input {
-      padding-left: 25px; // Adjust this value based on the size of your icon
+      padding-left: 45px; // Adjust this value based on the size of your icon
+      font-size: 16px;
     }
   }
   .text{

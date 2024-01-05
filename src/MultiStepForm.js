@@ -4,6 +4,7 @@ import './CustomButton.scss';
 import { DatePicker } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import CustomStep from './CustomStep';
+import { ReactComponent as DateIcon } from './images/DateIcon.svg';
 
 const fieldGroups = [
     [
@@ -56,7 +57,11 @@ const MultiStepForm = () => {
         ) : field.type === 'number' ? (
           <input type="number" placeholder={field.placeholder} />
         ) : (
-          <DatePicker placeholder={field.placeholder} style={{ width: '102%' }}/>
+          <DatePicker
+            className="setup-datepicker"
+            placeholder="dd/mm/yy"
+            suffixIcon={<DateIcon />} // Custom icon
+            />
         )}
       </div>
     ));
