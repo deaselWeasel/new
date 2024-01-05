@@ -34,7 +34,7 @@
     margin-top: 80px;
     color: var(--Primary, #292929);
     /* San Serif/Body/Regular */
-    font-family: Objektiv VF;
+    font-family: objektiv-mk2;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -75,7 +75,7 @@
   .profile-text h2,
     .profile-text p {
     color: var(--PrimaryText, #292929);
-    font-family: 'Objektiv VF', sans-serif; /* Ensure the font-family is correctly defined */
+    font-family: objektiv-mk2, sans-serif; /* Ensure the font-family is correctly defined */
     font-size: 16px;
     font-style: normal;
     line-height: 20px; /* Adjusted for readability, make smaller if needed */
@@ -128,7 +128,7 @@
 
     .unlock-text {
         color: var(--Primary, #292929);
-        font-family: 'Objektiv VF', sans-serif; /* Ensure the font-family is correctly defined */
+        font-family: objektiv-mk2, sans-serif; /* Ensure the font-family is correctly defined */
         font-size: 16px;
         font-style: normal;
         font-weight: 400;

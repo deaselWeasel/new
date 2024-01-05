@@ -60,7 +60,7 @@
       border-radius: 30px;
       height: 60px;
       /* Add other styles as needed */
-      font-family: 'Objektiv VF', sans-serif; /* Fallback to sans-serif if Objektiv VF is not available */
+      font-family: objektiv-mk2, sans-serif; /* Fallback to sans-serif if Objektiv VF is not available */
       font-size: 14px;
       font-weight: 400; /* This should correspond to the weight defined in @font-face */
       line-height: 20px;
