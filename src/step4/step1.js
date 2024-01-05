@@ -55,6 +55,7 @@ const Step1 = () => {
         label="Mobile Number"
         name="mobileNumber"
         rules={[{ message: 'Please enter your mobile number.' }]}
+        type="number"
       >
         <Input placeholder="Enter your mobile" allowClear />
       </Form.Item>
@@ -62,6 +63,7 @@ const Step1 = () => {
         label="TFN"
         name="tfn"
         rules={[{ message: 'Please enter your Tax File Number.' }]}
+        type="number"
       >
         <Input placeholder="Tax File Number" allowClear />
       </Form.Item>
@@ -69,6 +71,7 @@ const Step1 = () => {
         label="Passport"
         name="passport"
         rules={[{ message: 'Please enter your Passport Number.' }]}
+        type="number"
       >
         <Input prefix={<PassportIcon/>} placeholder="Passport Number" allowClear />
       </Form.Item>

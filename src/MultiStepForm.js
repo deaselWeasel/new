@@ -15,11 +15,11 @@ const fieldGroups = [
     [
       { label: 'Last Name', placeholder: 'Citizen', type: 'text', key: 'lastName' },
       { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
-      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'text', key: 'medicare' },
+      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare' },
     ],
     [
       { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
-      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'text', key: 'medicare' },
+      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare' },
       { label: 'Superfund Details', placeholder: 'Superfund Name/ID', type: 'text', key: 'superfund' },
     ],
 ];
