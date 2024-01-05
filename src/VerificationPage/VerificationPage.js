@@ -66,6 +66,7 @@ const VerificationPage = () => {
                 onKeyDown={(e) => handleBackspace(e, index)}
                 ref={inputRefs.current[index]}
                 disabled={isLoading}
+                type="tel"
               />
             ))}
           </div>
