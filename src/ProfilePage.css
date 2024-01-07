@@ -46,8 +46,7 @@
 }
 
 .profile-box {
-    width: 270px; /* Match the width of the top and bottom containers */
-    height: 60px; /* Subtract the total height of top and bottom containers */
+    width: 300px; /* Match the width of the top and bottom containers */
     margin: 300px 0; /* The top margin should match the height of the top container */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -70,6 +69,7 @@
   
   .profile-text {
     text-align: left;
+    margin-right: 25px; /* Add spacing between the icon and text */
   }
   
   .profile-text h2,
