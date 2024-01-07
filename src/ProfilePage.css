@@ -129,7 +129,6 @@
   .top-page-container,
   .bottom-page-container {
     width: 100vw; /* Adjust width for smaller screens */
-    border-radius: 2rem;
   }
   
   .top-page-container {
