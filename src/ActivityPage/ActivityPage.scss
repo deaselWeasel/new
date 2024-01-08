@@ -31,10 +31,6 @@
     overflow: hidden;
     border-radius: var(--radius-btn-radius, 0.25rem);
     background: var(--PrimaryBG, rgba(255, 255, 255, 0.00));
-    
-
-
-    // ... other existing styles
 }
 
 
@@ -118,13 +114,13 @@
 
 
 .overlay-activity{
-    position: fixed;
+    position: relative;
     bottom: 0;
-    top: calc(30px + 5.3125rem * 2);
+    top: 0rem;
     width: 100%; /* Responsive width based on viewport width */
     max-width: 450px; /* Ensures element doesn't exceed the parent's width */
     min-width: 250px; /* Minimum width to maintain usability */
-    height: auto;
+    height: 42rem;
     max-height: 95vh;
     display: flex;
     flex-direction: column;
@@ -190,7 +186,8 @@
         margin-bottom: 10px; /* Space before the list starts */
         font-family: objektiv-mk2, sans-serif; /* The specified font family */
         width: 100%; /* Ensure the header spans the full width */
-        margin-top: -50px;
+        margin-top: -30px;
+        overflow-y: hidden;
       }
       
       .date-header {
