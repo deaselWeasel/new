@@ -4,24 +4,27 @@ import './CustomButton.scss';
 import { DatePicker } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import CustomStep from './CustomStep';
-import { ReactComponent as DateIcon } from './images/DateIcon.svg';
+
+import dateIcon from './images/dateIcon.png';
+import medicareCard from './images/medicareCard.png';
+import superIcon from './images/superIcon.png';
 
 const fieldGroups = [
-    [
+  [
       { label: 'First Name', placeholder: 'John', type: 'text', key: 'firstName' },
       { label: 'Last Name', placeholder: 'Citizen', type: 'text', key: 'lastName' },
-      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
-    ],
-    [
+      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob', icon: dateIcon },
+  ],
+  [
       { label: 'Last Name', placeholder: 'Citizen', type: 'text', key: 'lastName' },
-      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
-      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare' },
-    ],
-    [
-      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
-      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare' },
-      { label: 'Superfund Details', placeholder: 'Select your current Super Fund', type: 'text', key: 'superfund' },
-    ],
+      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob', icon: dateIcon },
+      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare', icon: medicareCard },
+  ],
+  [
+      { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob', icon: dateIcon },
+      { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare', icon: medicareCard },
+      { label: 'Superfund Details', placeholder: 'Superfund Name/ID', type: 'text', key: 'superfund', icon: superIcon },
+  ],
 ];
 
 const MultiStepForm = () => {
@@ -49,23 +52,44 @@ const MultiStepForm = () => {
 
   const renderFields = () => {
     const fieldsToShow = fieldGroups[currentStep];
-    return fieldsToShow.map((field) => (
-      <div className="form-field" key={field.key}>
-        <label>{field.label}</label>
-        {field.type === 'text' ? (
-          <input type="text" placeholder={field.placeholder} />
-        ) : field.type === 'number' ? (
-          <input type="number" placeholder={field.placeholder} />
-        ) : (
+    return fieldsToShow.map((field) => {
+      const icon = field.icon ? (
+        <img src={field.icon} alt={field.label} className="input-icon" />
+      ) : null;
+  
+      // Add a specific class for fields with icons
+      const fieldClass = field.icon ? "form-field with-icon" : "form-field";
+      // Additional class for specific fields
+      const additionalClass = field.key === 'medicare' || field.key === 'superfund' ? "special-field" : "";
+  
+      let inputComponent;
+      if (field.type === 'text' || field.type === 'number') {
+        inputComponent = (
+          <div className={`input-with-icon ${additionalClass}`}>
+            {icon}
+            <input type={field.type} placeholder={field.placeholder} className="custom-input" />
+          </div>
+        );
+      } else if (field.type === 'date') {
+        inputComponent = (
           <DatePicker
             className="setup-datepicker"
-            placeholder="dd/mm/yy"
-            suffixIcon={<DateIcon />} // Custom icon
-            />
-        )}
-      </div>
-    ));
+            placeholder={field.placeholder}
+            suffixIcon={icon}
+          />
+        );
+      }
+  
+      return (
+        <div className={`${fieldClass} ${additionalClass}`} key={field.key}>
+          <label>{field.label}</label>
+          {inputComponent}
+        </div>
+      );
+    });
   };
+  
+  
 
   const renderNextButton = () => {
     let buttonText = '';
