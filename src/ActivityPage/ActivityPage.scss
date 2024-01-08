@@ -142,7 +142,7 @@
         color: var(--text-disabled-text, rgba(28, 28, 28, 0.31));
         /* San Serif/Body/Bold */
         font-family: sans-serif;
-        font-size: smaller;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: 1.25rem; /* 142.857% */
@@ -154,6 +154,7 @@
         border-bottom: 1px solid #f0f0f0;
         display: flex; /* This ensures items align horizontally */
         justify-content: space-between; /* This separates items to either end */
+        height: 70px;
     }
     
       .ant-avatar {
@@ -208,7 +209,7 @@
 }
 
 .overlay-list {
-    height: 150px; /* Set a fixed height for the list container */
+    height: 140px; /* Set a fixed height for the list container */
 }
 
 /* Styling for the scrollbar (optional) */

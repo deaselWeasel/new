@@ -81,66 +81,65 @@ const ActivityPage = () => {
       ];
       
       const monthYear = transactions.length > 0 ? `${transactions[0].month} ${transactions[0].year}` : '';
-      return (
+    return (
         <div>
             <div className="activity-container" style={{ backgroundImage: `url(${backgroundImage})` }}>
-            <div className="activity-page-header">
-                <h1>Activity</h1>
-                <Selector/>
-            </div>
-
-            <div className="boxes-above-overlay">
-                <div className="left-box" >
-                    <h6>Upcoming</h6>
-                    <h1>4</h1>
+                <div className="activity-page-header">
+                    <h1>Activity</h1>
+                    <Selector/>
                 </div>
-                <div className="right-box">
-                    <h6>Insights</h6>
-                    <img src={graphImage} alt="graph"/>
 
-                </div>
-            </div>   
-            <Row justify="center" style={{width:'100%'}}>
-                <Col xs={24} sm={20} md={18} lg={16} xl={14}>
-                    <div className="overlay-activity">
-                    <DownOutlined className="activity-down-icon" />
-                        {/* Month and Year header */}
-                        {transactions.length > 0 && (
-                            <div className="month-year-header">{monthYear}</div>
-                        )}
-                        {/* List of transactions */}
-                        <List
-                            itemLayout="horizontal"
-                            dataSource={transactions}
-                            renderItem={day => (
-                                <div key={day.date}>
-                                    <div className="date-header">{day.date}</div>
-                                    <div className="overlay-list">
-                                    <List
-                                        itemLayout="horizontal"
-                                        dataSource={day.items}
-                                        renderItem={item => (
-                                            <List.Item>
-                                                <List.Item.Meta
-                                                    avatar={<Avatar style={{ backgroundColor: item.color, color: '#000' }}>{item.initials}</Avatar>}
-                                                    title={<a href={`http://${item.details}`}>{item.description}</a>}
-                                                    description={`${item.time}, ${item.details}`}
-                                                />
-                                                <div className="transaction-amount">{item.amount}</div>
-                                            </List.Item>
-                                        )}
-                                    />
-                                     </div>
-                                </div>
-                            )}
-                        />
+                <div className="boxes-above-overlay">
+                    <div className="left-box">
+                        <h6>Upcoming</h6>
+                        <h1>4</h1>
                     </div>
-                </Col>
-            </Row>
+                    <div className="right-box">
+                        <h6>Insights</h6>
+                        <img src={graphImage} alt="graph"/>
+                    </div>
+                </div>
+
+                <Row justify="center" style={{ width: '100%' }}>
+                    <Col xs={24} sm={20} md={18} lg={16} xl={14}>
+                        <div className="overlay-activity">
+                            <DownOutlined className="activity-down-icon" />
+                            {/* Month and Year header */}
+                            {transactions.length > 0 && (
+                                <div className="month-year-header">{monthYear}</div>
+                            )}
+                            {/* List of transactions */}
+                            <List
+                                itemLayout="horizontal"
+                                dataSource={transactions}
+                                renderItem={day => (
+                                    <div key={day.date}>
+                                        <div className="date-header">{day.date}</div>
+                                        <div className="overlay-list">
+                                            <List
+                                                itemLayout="horizontal"
+                                                dataSource={day.items}
+                                                renderItem={item => (
+                                                    <List.Item>
+                                                        <List.Item.Meta
+                                                            avatar={<Avatar style={{ backgroundColor: item.color, color: '#000' }}>{item.initials}</Avatar>}
+                                                            title={item.description}
+                                                            description={`${item.time}, ${item.details}`}
+                                                        />
+                                                        <div className="transaction-amount">{item.amount}</div>
+                                                    </List.Item>
+                                                )}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                            />
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+            <Footer iconColor="#5E4DB2"/>
         </div>
-        <Footer iconColor="#5E4DB2"/>
-        </div>
-        
     );
 };
 
