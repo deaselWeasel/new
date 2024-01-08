@@ -29,6 +29,13 @@
   overflow: hidden;
   border-radius: var(--radius-btn-radius, 0.25rem);
   background: var(--PrimaryBG, rgba(255, 255, 255, 0));
+  font-size: 16px;
+}
+.selector-styles .ant-select-selector {
+  font-size: 16px;
+}
+.selector-styles .ant-select-dropdown .ant-select-item {
+  font-size: 16px;
 }
 
 .boxes-above-overlay {
@@ -104,13 +111,13 @@
 }
 
 .overlay-activity {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  top: calc(30px + 10.625rem);
+  top: 0rem;
   width: 100%; /* Responsive width based on viewport width */
   max-width: 450px; /* Ensures element doesn't exceed the parent's width */
   min-width: 250px; /* Minimum width to maintain usability */
-  height: auto;
+  height: 42rem;
   max-height: 95vh;
   display: flex;
   flex-direction: column;
@@ -172,7 +179,8 @@
   margin-bottom: 10px; /* Space before the list starts */
   font-family: objektiv-mk2, sans-serif; /* The specified font family */
   width: 100%; /* Ensure the header spans the full width */
-  margin-top: -50px;
+  margin-top: -30px;
+  overflow-y: hidden;
 }
 .overlay-activity .date-header {
   /* Existing styles... */
