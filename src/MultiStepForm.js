@@ -20,7 +20,7 @@ const fieldGroups = [
     [
       { label: 'Date of Birth', placeholder: 'Select date', type: 'date', key: 'dob' },
       { label: 'Medicare Card Number', placeholder: '1234 5678 9012', type: 'number', key: 'medicare' },
-      { label: 'Superfund Details', placeholder: 'Select your current Super Fundn', type: 'text', key: 'superfund' },
+      { label: 'Superfund Details', placeholder: 'Select your current Super Fund', type: 'text', key: 'superfund' },
     ],
 ];
 
