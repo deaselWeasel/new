@@ -28,7 +28,7 @@ const CustomDropdown = () => {
         prefix={<MedicareIcon />}
         suffix={<DownOutlined />}
         onClick={() => setVisible(!visible)}
-        placeholder="Select your Medicare Fund"
+        placeholder="Select your current Super Fund"
       />
     </Dropdown>
   );
