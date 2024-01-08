@@ -15,6 +15,9 @@ import { ReactComponent as DateIcon } from '../images/DateIcon.svg';
 function BookingPage() {
   const [activeButton, setActiveButton] = useState('newBooking'); // Default active button
 
+  const [bookingOption, setBookingOption] = useState(null);
+  const [bookingFor, setBookingFor] = useState(null);  
+
   const handleButtonClick = (button) => {
     setActiveButton(button);
   };
@@ -23,6 +26,20 @@ function BookingPage() {
     console.log('Form Data submitted:', values);
    
   };
+
+  // Handler for first group of radio buttons
+  const onBookingOptionChange = e => {
+    console.log("Booking Option Selected: ", e.target.value);
+    setBookingOption(e.target.value);
+  };
+
+  // Handler for second group of radio buttons
+  const onBookingForChange = e => {
+    console.log("Booking For Selected: ", e.target.value);
+    setBookingFor(e.target.value);
+  };
+
+
   const [selectedValue, setSelectedValue] = useState(null);
 
   const onRadioChange = e => {
@@ -57,28 +74,28 @@ function BookingPage() {
             value="option1"
             title="Caroline Springs Super Clinic"
             label="Last Wed, Dr Eamon West"
-            checked={selectedValue === 'option1'}
-            onChange={onRadioChange}
+            checked={bookingOption === 'option1'}
+            onChange={onBookingOptionChange}
          />
          <CustomRadioCard
         value="option2"
         title="Melbourne Physio"
         label="Tues 4/8, Dr James Green"
-        checked={selectedValue === 'option2'}
-        onChange={onRadioChange}
+        checked={bookingOption === 'option2'}
+        onChange={onBookingOptionChange}
       />
       <h3>Who is this booking for ?</h3>
       <CustomRadioCard
         value="option3"
         title="This booking is for me."
-        checked={selectedValue === 'option3'}
-        onChange={onRadioChange}
+        checked={bookingFor === 'option3'}
+        onChange={onBookingForChange}
       />
       <CustomRadioCard 
         value="option4"
         title="This booking is for someone else."
-        checked={selectedValue === 'option4'}
-        onChange={onRadioChange}
+        checked={bookingFor === 'option4'}
+        onChange={onBookingForChange}
       />
         <h3>Preferred Date</h3>
         <DatePicker
