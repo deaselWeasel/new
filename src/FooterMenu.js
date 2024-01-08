@@ -30,7 +30,7 @@ const FooterMenu = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/talk" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to="#" style={{ textDecoration: 'none', color: 'inherit' }}>
                         Talk to Us
                         <TalkIcon />
                     </Link>
