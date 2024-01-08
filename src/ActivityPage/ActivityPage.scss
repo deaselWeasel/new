@@ -27,10 +27,20 @@
 }
 
 .selector-styles {
-    width: 150px; // Set the width to 100px
+    width: 150px; // Set the width to 150px
     overflow: hidden;
     border-radius: var(--radius-btn-radius, 0.25rem);
     background: var(--PrimaryBG, rgba(255, 255, 255, 0.00));
+    font-size: 16px;
+    .ant-select-selector {
+        font-size: 16px; // Set font size for the input field
+      }
+    
+      .ant-select-dropdown {
+        .ant-select-item {
+          font-size: 16px; // Set font size for dropdown options
+        }
+      }
 }
 
 
