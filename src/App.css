@@ -3,84 +3,84 @@
 
 @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Bold.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Bold.otf') format('otf');
     font-weight: bold;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-BoldItalic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-BoldItalic.otf') format('otf');
     font-weight: bold;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-ExtraLight.otf') format('opentype');
+    src: url('../assets/fonts/VIC-ExtraLight.otf') format('otf');
     font-weight: 200;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-ExtraLightItalic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-ExtraLightItalic.otf') format('otf');
     font-weight: 200;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Italic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Italic.otf') format('otf');
     font-weight: normal;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Light.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Light.otf') format('otf');
     font-weight: 300;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-LightItalic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-LightItalic.otf') format('otf');
     font-weight: 300;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Medium.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Medium.otf') format('otf');
     font-weight: 500;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-MediumItalic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-MediumItalic.otf') format('otf');
     font-weight: 500;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Regular.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Regular.otf') format('otf');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-SemiBold.otf') format('opentype');
+    src: url('../assets/fonts/VIC-SemiBold.otf') format('otf');
     font-weight: 600;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-SemiBoldItalic.otf') format('opentype');
+    src: url('../assets/fonts/VIC-SemiBoldItalic.otf') format('otf');
     font-weight: 600;
     font-style: italic;
   }
