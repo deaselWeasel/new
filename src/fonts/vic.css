@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'cVIC';
+    src: url('VIC-Medium.otf') format('opentype'),
+        url('VIC-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+  }

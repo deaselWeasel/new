@@ -32,7 +32,7 @@
     margin-top: 40px;
     color: var(--navigation-buttons-primary-text, #FFF);
     text-align: center;
-    font-family: VIC;
+    font-family: cVIC;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +46,7 @@
     right: 20px;
     color: var(--navigation-buttons-primary-text, #FFF);
     text-align: center;
-    font-family: VIC;
+    font-family: cVIC;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
