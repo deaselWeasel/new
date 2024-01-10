@@ -24,7 +24,6 @@ const SplashPage = () => {
       </div>
       <div className="disable-footer-menu">
       <Footer
-        customStyle="splash-footer"
         buttonOpacity={0.2}
       />
       </div>
