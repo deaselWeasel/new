@@ -43,7 +43,12 @@ const ProfilePage = () => {
       <div className="profile-bottom-page-container">
         <p className="profile-unlock-text">Set up your profile to unlock more.</p>
       </div>
-      <Footer iconColor="#5E4DB2"/>
+      <div className="disable-footer-menu">
+        <Footer
+         iconColor="#5E4DB2"
+         buttonOpacity={0.2}
+         />
+      </div>
     </div>
   );
 };
