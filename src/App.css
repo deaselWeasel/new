@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Bold.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
   }
