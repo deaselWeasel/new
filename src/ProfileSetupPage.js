@@ -6,7 +6,11 @@ const HomePage = () => {
   return (
     <div>
       <MultiStepForm/>
-      <Footer/>
+      <div className="disable-footer-menu">
+      <Footer
+        buttonOpacity={0.2}
+      />
+      </div>
       {/* Content of the Home Page */}
     </div>
   );
