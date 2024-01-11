@@ -52,7 +52,7 @@
   
   @font-face {
     font-family: 'VIC';
-    src: url('../assets/fonts/VIC-Medium.otf') format('opentype');
+    src: url('../assets/fonts/VIC-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
   }
