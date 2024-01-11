@@ -94,7 +94,11 @@ const VerificationPage = () => {
           <p>Just a moment while we verify your pin.</p>
         </div>
       )}   
-      <Footer/>
+      <div className="disable-footer-menu">
+      <Footer
+        buttonOpacity={0.2}
+      />
+      </div>
     </div>
   );
 };

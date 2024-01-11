@@ -87,7 +87,11 @@ const Step1 = () => {
         <CustomButton text="I'll do this later" type="secondary" onClick={() => navigate('/')}></CustomButton>
       </div>
     </div>
-    <Footer/>   
+    <div className="disable-footer-menu">
+      <Footer
+        buttonOpacity={0.2}
+      />
+      </div>  
   </div>
   );
 };
